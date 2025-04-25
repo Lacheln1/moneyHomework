@@ -11,12 +11,6 @@ const History = () => {
         <li>
           <HistoryLists />
         </li>
-        <li>
-          <HistoryLists />
-        </li>
-        <li>
-          <HistoryLists />
-        </li>
       </ul>
     </div>
   );

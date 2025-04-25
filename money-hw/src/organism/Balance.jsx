@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import css from "./Balance.module.css";
+import { getListData } from "./../api/historyApi";
 
 const Balance = () => {
+  // 잔액
+  const [balance, setBalance] = useState(200000);
+
   return (
     <div className={css.wrapContainer}>
       <div className={css.balanceContainer}>
         <span className={css.title}>잔액</span>
-        <span className={css.number}> 200,000</span>
+        <span className={css.number}> {balance}</span>
       </div>
       <div className={css.inoutContainer}>
         <div className={css.income}>

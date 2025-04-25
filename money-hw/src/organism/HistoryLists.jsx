@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import css from "./HistoryLists.module.css";
-const HistoryLists = ({ data }) => {
+import { getListData } from "../api/historyApi";
+const HistoryLists = () => {
+  const [historyData, setHistoryData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getListData();
+        setHistoryData(data);
+        console.log(data);
+      } catch (error) {
+        console.log("세부내역 업데이트 오류", error);
+      }
+    };
+    fetchData;
+  }, []);
   return (
     <div className={css.listContainer}>
-      <span className={css.title}>4월용돈</span>
-      <span className={css.price}>+300,000</span>
-      <div className={css.bar}></div>
+      {historyData.map((data) => (
+        <div>
+          <span className={css.title}>{data.description}</span>
+          <span className={css.price}>{data.amount}</span>
+          <div className={css.bar}></div>
+        </div>
+      ))}
     </div>
   );
 };
