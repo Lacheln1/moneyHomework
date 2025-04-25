@@ -3,9 +3,8 @@ import css from "./Balance.module.css";
 
 const Balance = () => {
   return (
-    <section>
-      <h1>용돈 기입장</h1>
-      <div>
+    <>
+      <div className={css.wrapContainer}>
         <div className={css.balanceContainer}>
           <span className={css.title}>잔액</span>
           <span className={css.number}> 200,000</span>
@@ -21,7 +20,7 @@ const Balance = () => {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 
