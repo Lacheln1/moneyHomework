@@ -17,6 +17,7 @@ const Transaction = () => {
         지출
         <button className={css.addBtn}>거래 추가</button>
       </div>
+      {/*trsCon에 flex스타일 주고 아래에  history 컴포넌트 불러올예정 */}
     </div>
   );
 };
