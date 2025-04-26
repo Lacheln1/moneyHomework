@@ -20,6 +20,18 @@
       "amount": 11000,
       "type": "expense",
       "date": "2025-04-25"
+    },
+    {
+      "id": "73d1",
+      "description": "피시방",
+      "type": "income",
+      "amount": "3000"
+    },
+    {
+      "id": "7e09",
+      "description": "피시방",
+      "type": "income",
+      "amount": "3000"
     }
   ]
 }
