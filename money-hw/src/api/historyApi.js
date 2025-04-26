@@ -1,4 +1,5 @@
 import axios from "axios";
+import { type } from "./../../node_modules/path-type/index.d";
 
 export const getListData = async () => {
   try {
@@ -11,13 +12,13 @@ export const getListData = async () => {
   }
 };
 
-export const addListData = async (text, type, amount) => {
+export const addListData = async (text, amount, type) => {
   try {
     await axios
       .post(`/api/money`, {
         description: text,
+        amount: parseInt(amount),
         type: type,
-        amount: amount,
       })
       .then(function (response) {
         console.log("포스트 성공", response);

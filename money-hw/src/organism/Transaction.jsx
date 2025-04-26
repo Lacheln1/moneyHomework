@@ -22,6 +22,7 @@ const Transaction = () => {
           className={css.inputDes}
           placeholder="내용 입력..."
           onChange={(e) => setText(e.target.value)}
+          value={text}
         />
         <input type="radio" name="type" value="income" onChange={handleEvent} />
         수입
@@ -37,10 +38,15 @@ const Transaction = () => {
           className={css.inputDes}
           placeholder="금액 입력..."
           onChange={(e) => setAmount(e.target.value)}
+          value={amount}
         />
         <button
           className={css.addBtn}
-          onClick={() => addListData(text, type, amount)}
+          onClick={() => {
+            addListData(text, amount, type);
+            setText("");
+            setAmount("");
+          }}
         >
           거래 추가
         </button>
