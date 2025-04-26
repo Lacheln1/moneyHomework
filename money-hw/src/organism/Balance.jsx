@@ -6,6 +6,9 @@ const Balance = () => {
   // 잔액
   const [balance, setBalance] = useState(200000);
 
+  let totalIncome = JSON.parse(localStorage.getItem("totalIncome")) || 0;
+  let totalExpense = JSON.parse(localStorage.getItem("totalExpense")) || 0;
+
   return (
     <div className={css.wrapContainer}>
       <div className={css.balanceContainer}>
@@ -15,11 +18,11 @@ const Balance = () => {
       <div className={css.inoutContainer}>
         <div className={css.income}>
           <p className={css.title}>수입</p>
-          <p className={css.number}>300,000</p>
+          <p className={css.number}>{totalIncome}</p>
         </div>
         <div className={css.expense}>
           <p className={css.title}>지출</p>
-          <p className={css.number}>100,000</p>
+          <p className={css.number}>{totalExpense}</p>
         </div>
       </div>
     </div>
