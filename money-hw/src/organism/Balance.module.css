@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+.wrapContainer {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.balanceContainer {
+  display: inline-block;
+  margin: auto 0;
+}
+
+.inoutContainer {
+  display: flex;
+}

@@ -1,5 +1,4 @@
 import axios from "axios";
-import { type } from "./../../node_modules/path-type/index.d";
 
 export const getListData = async () => {
   try {
@@ -12,7 +11,7 @@ export const getListData = async () => {
   }
 };
 
-export const addListData = async (text, amount, type) => {
+export const addListData = async (text, type, amount) => {
   try {
     await axios
       .post(`/api/money`, {

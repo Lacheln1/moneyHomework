@@ -17,15 +17,9 @@
     {
       "id": 3,
       "description": "영화 관람",
-      "amount": 11000,
+      "amount": 100000,
       "type": "expense",
       "date": "2025-04-25"
-    },
-    {
-      "id": "d24f",
-      "description": "ㅁㄴㅇㄹ",
-      "type": "income",
-      "amount": 3311
     }
   ]
 }
