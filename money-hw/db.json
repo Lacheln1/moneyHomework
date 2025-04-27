@@ -1,25 +1,37 @@
 {
   "money": [
     {
-      "id": 1,
+      "id": "1",
       "description": "용돈",
       "amount": 300000,
       "type": "income",
       "date": "2025-04-25"
     },
     {
-      "id": 2,
+      "id": "2",
       "description": "용돈",
       "amount": 300000,
       "type": "income",
       "date": "2025-04-25"
     },
     {
-      "id": 3,
+      "id": "3",
       "description": "영화 관람",
       "amount": 100000,
       "type": "expense",
       "date": "2025-04-25"
+    },
+    {
+      "id": "3808",
+      "description": "기타",
+      "amount": 2000,
+      "type": ""
+    },
+    {
+      "id": "22cf",
+      "description": "기타",
+      "amount": 1000,
+      "type": ""
     }
   ]
 }
